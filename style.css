@@ -1,0 +1,140 @@
+/* Base styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.containercard {
+  max-width: 2000px;
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+.product-item {
+  background-color: #e9ecef;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 300px;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.d-flex.gap-3 {
+  gap: 1rem !important;
+}
+
+
+button {
+  margin-top: 10px;
+}
+
+/* Task styling */
+.task-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  flex: 1 1 50%;
+  font-weight: bold;
+}
+
+/* Button styles */
+button.close-btn,
+button.add-btn,
+button.inPro-btn {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.close-btn {
+  background-color: #dc3545;
+}
+
+button.add-btn {
+  background-color: #28a745;
+}
+
+button.inPro-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+/* Card container styling */
+.product-item {
+  background-color: #e9ecef;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+
+.product-item h5 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task-zone {
+  min-height: 200px;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .product-item {
+    min-height: 500px;
+  }
+
+  .task-line {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tag {
+    flex: 1 1 100%;
+    margin-bottom: 8px;
+  }
+
+  button.close-btn,
+  button.add-btn,
+  button.inPro-btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .containercard {
+    padding: 0 10px;
+  }
+}
